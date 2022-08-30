@@ -5,7 +5,7 @@ function submit()
     var GuestName = document.getElementById("name1").value;
 	// use the push function as - names_of_people.push(GuestName);
 	console.log(GuestName);    
-    console.log(names_of_people.push);
+    names_of_people.push(GuestName);
     var lenght_of_name = names_of_people.length;
     console.log(lenght_of_name);
 	document.getElementById("display_name").innerHTML=names_of_people.toString();
@@ -25,7 +25,7 @@ function show()
 
 function sorting()
 	{
-	function sort();  names_of_people           // add the sort function here
+	 names_of_people.sort();          // add the sort function here
 		// .sort();
 		var i= names_of_people.join("<br>");
 		console.log(names_of_people);		
